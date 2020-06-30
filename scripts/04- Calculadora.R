@@ -33,3 +33,37 @@ round(sqrt(3), 1)
 round(sqrt(3))
 #si queres poner primero los digitos
 round(digits=2, sqrt(2))
+x= 2^2 * pi
+2*5+4/4-> Z
+Z
+nombre= "Francisco Alberto"
+nombre
+x=2
+x=3
+x=x^3
+# funcion
+cuadrado=function(a){a^2)
+cuadrado(6)# 6^2
+# tambien lo podes hacer asi
+resta2=function(e){
+  e-2
+}
+resta2(9)
+#Funciones mas complejas
+f= function(x,y,z){
+  abs(x)+log10(y)*sqrt(z)
+}
+f(5,4,3)
+# funciones de mas de 1 intruccion
+suma3=function(num){
+  num=resta2(num);
+  num=resta2(num);
+  resta2(num)
+}
+suma3(3)
+ls()
+rm(nombre)
+ls()
+rm(Z)
+ls()
+rm(list=ls())
