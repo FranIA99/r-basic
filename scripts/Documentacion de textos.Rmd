@@ -1,0 +1,49 @@
+---
+title: "Documentacion de Textos"
+author: "Francisco Alberto"
+date: "11/8/2020"
+output: pdf_document
+---
+# Titulo 1
+
+
+## Titulo 2
+
+
+### Titulo 3
+
+
+#### Titulo 4
+
+
+##### Titulo 5
+
+
+###### Titulo 6
+
+
+Esto es un texto llano. Podemos escribir sin problemas todo el texto que queramos para acompañar tanto al código en `R` como las funciones en \LaTeX.
+
+Esto seria una nueva linea de texto
+
+Para usar la *cursiva* podemos: escribir con un asterisco: *Esto es cursiva* , o tambien con un guion bajo: _Esto es cursiva_
+
+Para usar **negrita** podemos escribir: con doble asterisco **Esto es una negrita** o con dos guiones bajos __Esto es una negrita__
+
+Los superindices van con el **sombrerito**: Mi nota^2^ es genial.
+
+Para tacharuna palabra usamos doble tilde: ~~Las matemáticas son un rollo~~.
+
+Visita nuestra empresa, haz click aqui: [empresa de robótica](https:/www.empresaderobotica.com/)
+
+imagen ![](../../../../)
+
+### Listas no ordenadas
+
+* item primero
+* item segundo
+     + subitem 2.1
+     + subitem 2.2
+     + subitem 2.3
+* item tercero
+
