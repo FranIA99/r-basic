@@ -36,14 +36,44 @@ Para tacharuna palabra usamos doble tilde: ~~Las matemáticas son un rollo~~.
 
 Visita nuestra empresa, haz click aqui: [empresa de robótica](https:/www.empresaderobotica.com/)
 
-imagen ![](../../../../)
+imagen ![](582485f3325b7_896_591!.jpg)
 
-### Listas no ordenadas
+***
+
+> Esto es una cita en bloques
+
+
+### Listas no ordenadas.format(i,j)
 
 * item primero
 * item segundo
-     + subitem 2.1
-     + subitem 2.2
-     + subitem 2.3
+     + sub item 2.1
+     + sub item 2.2
+     + sub item 2.3
 * item tercero
+
+### Listas ordenadas
+
+1. Primer item
+
+2. Segundo item
+       
+       +sub item de 2
+       +Nuevo sub item
+
+3.Tercer item
+
+1.Cuarto item
+
+1.Último item    # No hace falta seguir la }
+                   nomeclatura
+
+
+#Para hacer una tabla
+
+Alumno      |      Carrera
+------------|-------------------
+Francisco   |     Robotica
+Nicolas     |   Contador Público
+Magalí      |     Maquillaje
 
