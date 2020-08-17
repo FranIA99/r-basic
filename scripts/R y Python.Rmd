@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 library(reticulate)
-use_pyth/Users/Francisco/)
+use_python("/Users/Francisco/anaconda4/pythonw.pdb")
 os = import("os")
 os$listdir(".")
 ```
