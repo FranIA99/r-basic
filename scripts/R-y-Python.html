@@ -1643,8 +1643,12 @@ summary {
 <div id="reticulate" class="section level2">
 <h2>Reticulate</h2>
 <pre class="r"><code>library(reticulate)
-os = import(&quot;os&quot;)
-os$listdir(&quot;.&quot;)</code></pre>
+use_python(&quot;/Users/Francisco/anaconda4/pythonw.pdb&quot;)
+os = import(&quot;os&quot;)</code></pre>
+<pre><code>## Warning: Python &#39;/Users/Francisco/anaconda4/pythonw.pdb.exe&#39; was requested
+## but &#39;C:/Users/Francisco/anaconda4/python.exe&#39; was loaded instead (see
+## reticulate::py_config() for more information)</code></pre>
+<pre class="r"><code>os$listdir(&quot;.&quot;)</code></pre>
 <pre><code>##  [1] &quot;.ipynb_checkpoints&quot;             &quot;02- Primer marckdowns(rmd).Rmd&quot;
 ##  [3] &quot;02--Primer-marckdowns-rmd-.pdf&quot; &quot;03- Instalacion de paquetes.R&quot; 
 ##  [5] &quot;04- Calculadora.R&quot;              &quot;05-math-python.ipynb&quot;          
@@ -1652,13 +1656,14 @@ os$listdir(&quot;.&quot;)</code></pre>
 ##  [9] &quot;582485f3325b7_896_591!.jpg&quot;     &quot;Documentacion de textos.Rmd&quot;   
 ## [11] &quot;Documentacion-de-textos.pdf&quot;    &quot;marckdown-Prueba.pdf&quot;          
 ## [13] &quot;marckdown-Prueba.Rmd&quot;           &quot;R y Python.Rmd&quot;                
-## [15] &quot;R-y-Python.pdf&quot;                 &quot;R-y-Python.Rmd&quot;                
-## [17] &quot;Rtest.R&quot;                        &quot;tema1&quot;                         
-## [19] &quot;tema10&quot;                         &quot;tema11&quot;                        
-## [21] &quot;tema12&quot;                         &quot;tema2&quot;                         
-## [23] &quot;tema3&quot;                          &quot;tema4&quot;                         
-## [25] &quot;tema5&quot;                          &quot;tema6&quot;                         
-## [27] &quot;tema8&quot;                          &quot;tema9&quot;</code></pre>
+## [15] &quot;R-y-Python.html&quot;                &quot;R-y-Python.pdf&quot;                
+## [17] &quot;R-y-Python.Rmd&quot;                 &quot;Rtest.R&quot;                       
+## [19] &quot;tema1&quot;                          &quot;tema10&quot;                        
+## [21] &quot;tema11&quot;                         &quot;tema12&quot;                        
+## [23] &quot;tema2&quot;                          &quot;tema3&quot;                         
+## [25] &quot;tema4&quot;                          &quot;tema5&quot;                         
+## [27] &quot;tema6&quot;                          &quot;tema8&quot;                         
+## [29] &quot;tema9&quot;</code></pre>
 </div>
 
 
