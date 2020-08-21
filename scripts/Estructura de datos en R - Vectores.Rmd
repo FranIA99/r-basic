@@ -3,7 +3,5 @@ title: "Vectores"
 author: "Francisco Alberto"
 date: "19/8/2020"
 output: pdf_document
----
-
 
 vec = 
