@@ -1,0 +1,25 @@
+---
+title: "Binomio de Newton"
+author: "Francisco Alberto"
+date: "22/8/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Producto notable
+La formula del producto notable es:
+$$(a+b)^2 = a^2+2ab+b^2$$
+
+# Funcion con R
+```{r}
+binomiodenewton2 = function(a,b){
+  a^2+2*a*b+b^2
+}
+binomiodenewton2(1,2)
+```
+
+# BINOMIO DE NEWTON
+$$(a+b)^n = \sum_{k=0}^n{n\choose k}$$
