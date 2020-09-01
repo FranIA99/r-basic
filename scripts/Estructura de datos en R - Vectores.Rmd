@@ -12,3 +12,9 @@ output: pdf_document
 vec = seq(1,40,by=4)
 
 print(vec)
+
+
+
+
+
+
