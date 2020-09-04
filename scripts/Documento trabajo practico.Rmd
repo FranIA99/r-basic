@@ -1,0 +1,63 @@
+---
+title: "Documento trabajo practico"
+author: "Francisco Alberto"
+date: "4/9/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Ejercicios sobre LaTeX, R y Markdown
+
+###Juan Gabriel Gomila & María Santos
+
+#####30/12/2018
+
+###Instrucciones
+
+En primer lugar, debéis reproducir este documento tal cual está. Necesitaréis instalar MiKTeX y Texmaker.
+
+A continuación de cada pregunta, tenéis que redactar vuestras respuestas de manera correcta y argumentada,indicando qué hacéis, por qué, etc. Si se os pide utilizar instrucciones de R, tendréis que mostrarlas todas en chunks.
+
+El objetivo de esta tarea es que os familiaricéis con los documentos Markdown, las fórmulas en $\LaTeX$ y los chunks de R . Y, de lo más importante, que os acostumbréis a explicar lo que hacéis en cada momento.
+
+###Preguntas
+
+####Pregunta 1
+
+Realizad los siguientes productos de matrices siguiente en R:$$A \cdot\ B$$
+               $$ B \cdot\ A$$
+              $$\ ( A \cdot\ B \ )^t$$
+              $$\ B^t \cdot\ A$$ 
+              $$\ ( \ A \cdot\ B \ )^-1$$
+              $$ \ A^-1 \cdot\ B^t$$ 
+  donde
+  
+  
+   
+   
+Finalmente, escribe haciendo uso de $\LaTeX$ el resultado de los dos primeros productos de forma adecuada.
+
+####Pregunta 2
+
+Considerad en un vector los números de vuestro DNI y llamadlo dni. Por ejemplo, si vuestro DNI es
+54201567K, vuestro vector será, $$ \ dni \ = \ (5,4,2,0,1,5,6,7 \ )$$
+
+
+Definid el vector en R. Calculad con R el vector dni al cuadrado, la raíz cuadrada del vector dni y, por último,la suma de todas las cifras del vector dni.
+
+Finalmente, escribid todos estos vectores también a $\LaTeX$
+
+####Pregunta 3
+
+Considerad el vector de las letras de vuestro nombre y apellido. Llamadlo name. Por ejemplo, en mi caso sería, $$\ nombre = \ ( M,A,R,I,A,S,A,N,T,O,S \ )$$
+
+
+Definid dicho vector en R. Calculad el subvector que solo contenga vuestro nombre. Calculad también el subvector que contenga solo vuestro apellido. Ordenadlo alfabéticamente. Cread una matriz con este vector.
+
+Redactad todos vuestros resultados y utilizad $\LaTeX$ cuando pertoque
+
+      
+
