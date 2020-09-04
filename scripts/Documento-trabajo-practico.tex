@@ -1,0 +1,117 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Documento trabajo practico},
+  pdfauthor={Francisco Alberto},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\title{Documento trabajo practico}
+\author{Francisco Alberto}
+\date{4/9/2020}
+
+\begin{document}
+\maketitle
+
+\#Ejercicios sobre LaTeX, R y Markdown
+
+\#\#\#Juan Gabriel Gomila \& María Santos
+
+\#\#\#\#\#530/12/2018
+
+\#\#\#Instrucciones
+
+En primer lugar, debéis reproducir este documento tal cual está.
+Necesitaréis instalar MiKTeX y Texmaker.
+
+A continuación de cada pregunta, tenéis que redactar vuestras respuestas
+de manera correcta y argumentada,indicando qué hacéis, por qué, etc. Si
+se os pide utilizar instrucciones de R, tendréis que mostrarlas todas en
+chunks.
+
+El objetivo de esta tarea es que os familiaricéis con los documentos
+Markdown, las fórmulas en \(\LaTeX\) y los chunks de R . Y, de lo más
+importante, que os acostumbréis a explicar lo que hacéis en cada
+momento.
+
+\#\#\#Preguntas
+
+\#\#\#\#Pregunta 1
+
+Realizad los siguientes productos de matrices siguiente en
+R:\[A \cdot\ B\] \[ B \cdot\ A\] \[\ ( A \cdot\ B \ )^t\]
+\[\ B^t \cdot\ A\] \[\ ( \ A \cdot\ B \ )^-1\] \[ \ A^-1 \cdot\ B^t\]
+donde
+
+Finalmente, escribe haciendo uso de \(\LaTeX\) el resultado de los dos
+primeros productos de forma adecuada.
+
+\#\#\#\#Pregunta 2
+
+Considerad en un vector los números de vuestro DNI y llamadlo dni. Por
+ejemplo, si vuestro DNI es 54201567K, vuestro vector será,
+\[ \ dni \ = \ (5,4,2,0,1,5,6,7 \ )\]
+
+Definid el vector en R. Calculad con R el vector dni al cuadrado, la
+raíz cuadrada del vector dni y, por último,la suma de todas las cifras
+del vector dni.
+
+Finalmente, escribid todos estos vectores también a \(\LaTeX\)
+
+\#\#\#\#Pregunta 3
+
+\end{document}
