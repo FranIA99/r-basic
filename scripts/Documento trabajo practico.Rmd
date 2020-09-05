@@ -9,55 +9,65 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-#Ejercicios sobre LaTeX, R y Markdown
+# Ejercicios sobre LaTeX , R  y Markdown
+### Juan Gabriel Gomila y María Santos
+#### 30/12/18
 
-###Juan Gabriel Gomila & María Santos
+## Instrucciones
 
-#####30/12/2018
+En primer lugar debes reproducir el documento tal cual está. Necesitarás instalar MiKTex y Texmaker.
 
-###Instrucciones
+A continuación de cada pregunta, tenes que redactar nuestra respuestas de manera correcta y argumentada, indicando lo que haces, por qué, etc. Si pide utilizar instrucciones de R, tendras que mostrarlas todas en Chuncks.
 
-En primer lugar, debéis reproducir este documento tal cual está. Necesitaréis instalar MiKTeX y Texmaker.
+El objetivo de esta tarea es que nos familiarizemos con los documentos Marckdown, las formulas en LaTeX y los chunks de R. Y, de lo mas importante, que te acostumbres a explicar lo que haces en cada momento.
 
-A continuación de cada pregunta, tenéis que redactar vuestras respuestas de manera correcta y argumentada,indicando qué hacéis, por qué, etc. Si se os pide utilizar instrucciones de R, tendréis que mostrarlas todas en chunks.
+## Preguntas
 
-El objetivo de esta tarea es que os familiaricéis con los documentos Markdown, las fórmulas en $\LaTeX$ y los chunks de R . Y, de lo más importante, que os acostumbréis a explicar lo que hacéis en cada momento.
+##### Pregunta 1      \
+ 
+Realizar los siguientes productos de matrices en R: $$\ A \cdot\ B$$
+$$\ B \cdot\ A$$
+$$\ ( A \cdot\ B \ )^ t$$
+$$\ B^t \cdot\ A$$
+$$\ ( A \cdot\ B \ ) ^-1$$
+$$\ A^-1 \cdot\ B^t$$
+donde:
 
-###Preguntas
+A = $$\begin{pmatrix}        
+    1 & 2 & 3 & 4 \\            
+    4 & 3 & 2 & 1 \\
+    0 & 1 & 0 & 2 \\
+    3 & 0 & 4 & 0
+    \end{pmatrix}$$
+    
+B = $$\begin{pmatrix}
+    4 & 3 & 2 & 1 \\
+    0 & 3 & 0 & 4 \\
+    1 & 2 & 3 & 4 \\
+    0 & 1 & 0 & 2 
+    \end{pmatrix}$$
+    
 
-####Pregunta 1
+Finalmente, escribe haciendo uso de LaTeX el resultado de los dos primeros productos de forma adecuada.
 
-Realizad los siguientes productos de matrices siguiente en R:$$A \cdot\ B$$
-               $$ B \cdot\ A$$
-              $$\ ( A \cdot\ B \ )^t$$
-              $$\ B^t \cdot\ A$$ 
-              $$\ ( \ A \cdot\ B \ )^-1$$
-              $$ \ A^-1 \cdot\ B^t$$ 
-  donde
-  
-  
-   
-   
-Finalmente, escribe haciendo uso de $\LaTeX$ el resultado de los dos primeros productos de forma adecuada.
-
-####Pregunta 2
-
-Considerad en un vector los números de vuestro DNI y llamadlo dni. Por ejemplo, si vuestro DNI es
-54201567K, vuestro vector será, $$ \ dni \ = \ (5,4,2,0,1,5,6,7 \ )$$
-
-
-Definid el vector en R. Calculad con R el vector dni al cuadrado, la raíz cuadrada del vector dni y, por último,la suma de todas las cifras del vector dni.
-
-Finalmente, escribid todos estos vectores también a $\LaTeX$
-
-####Pregunta 3
-
-Considerad el vector de las letras de vuestro nombre y apellido. Llamadlo name. Por ejemplo, en mi caso sería, $$\ nombre = \ ( M,A,R,I,A,S,A,N,T,O,S \ )$$
+##### Pregunta 2   \
 
 
-Definid dicho vector en R. Calculad el subvector que solo contenga vuestro nombre. Calculad también el subvector que contenga solo vuestro apellido. Ordenadlo alfabéticamente. Cread una matriz con este vector.
+Considerar en un vector los números del DNI y llamalo dni. Por ejemplo si nuestro DNI es: 54201567K, nuestro vector será: $$\ dni = \ (5,4,2,0,1,5,6,7 \ )$$
 
-Redactad todos vuestros resultados y utilizad $\LaTeX$ cuando pertoque
+Definir el vector en R. Calcular con R el vector dni al cuadrado, la raiz cuadrada del vector dni,y por último la suma de todas las cifras del vector dni.
+
+Finalmente, escribir todos estos vectores también en LaTeX 
+
+##### Pregunta 3    \
+
+
+Considerar el vector de las letras de nuestro nombre y apellido. Llamalo name. Por ejemplo en mi caso sería:$$\ nombre = \ ( M,A,R,I,A,S,A,N,T,O,S \ )$$
+
+Definir dicho vector en R. Calcular el subvector que solo contenga nuestro nombre. Calcula también el subvector que contenga solo nuestro apellido. Ordenalo alfabéticamente. Crea una matriz con ese vector.
+
+Redactá todos esos resultados y utiliza LaTex cuando pertoque.
+
 
       
 
