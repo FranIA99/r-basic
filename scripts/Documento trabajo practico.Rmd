@@ -69,5 +69,17 @@ Definir dicho vector en R. Calcular el subvector que solo contenga nuestro nombr
 Redactá todos esos resultados y utiliza LaTex cuando pertoque.
 
 
+```{r}
+nombre =("f,r,a,n,a,l,b,e,r,t,o")
+nombre[[1:4]]    # Subvector del nombre
+nombre[[5:11]]   # Subvector del apellido
+nombre.factor = factor(nombre) 
+matrix(nombre,nrow = 2)
+´´´
+
+
+
+
+                          
       
 
