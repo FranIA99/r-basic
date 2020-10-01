@@ -55,4 +55,18 @@ plot(logaritmico(x),xlab = "indices",
      color = "blue",cex = 3)
 ```
 
+```{r}
+par(mfrow = c(1,2))
+x = c(1,2,3,4,5,6)
+y = c(2,3,7,8,9,10)
+plot(x,y,main = "Gráfico 1",pch = 23,col = "blue",
+     bg = "red",lty = "datdashed",type = "b",
+     lwd = 2,xaxp = c(0,6,3),yaxp = c(0,10,5))
+plot(x,y,main = "Gráfico 2",pch = 23,col = "blue",
+     bg = "green",lty = "datdashed",type = "h",
+     lwd = 2,xaxp = c(0,6,3),yaxp = c(0,10,5))
+par(mfrow = c(1,1))
+```
+
+
 
