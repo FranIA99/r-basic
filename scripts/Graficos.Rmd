@@ -44,6 +44,7 @@ plot(triple(x),xlab = "Indices",
 plot(triple(x),xlab = "Indices",
      ylab = "Exponentes",main = "Triple",
      pch = 20 , cex = 2,col = "blue")
+par(mfrow = c(1,1))
 ```
 
 ```{r}
@@ -56,17 +57,25 @@ plot(logaritmico(x),xlab = "indices",
 ```
 
 ```{r}
-par(mfrow = c(1,2))
 x = c(1,2,3,4,5,6)
 y = c(2,3,7,8,9,10)
 plot(x,y,main = "Gráfico 1",pch = 23,col = "blue",
-     bg = "red",lty = "datdashed",type = "b",
+     bg = "red",lty = "dotdash",type = "b",
      lwd = 2,xaxp = c(0,6,3),yaxp = c(0,10,5))
-plot(x,y,main = "Gráfico 2",pch = 23,col = "blue",
-     bg = "green",lty = "datdashed",type = "h",
-     lwd = 2,xaxp = c(0,6,3),yaxp = c(0,10,5))
-par(mfrow = c(1,1))
+
+
 ```
+
+```{r}
+c = function(x){x^3}
+plot(c,xlab = "x",ylab = expression(y^3),
+     main = "Grafico cubo",
+     pch = 19 , lty = "dotdash",lwd = 2,
+     col = "red")
+abline(v = 0:1 , h = 0:1, lty = "dashed",
+       col = "gray0")
+```
+
 
 
 
