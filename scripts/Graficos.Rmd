@@ -12,9 +12,14 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Gráficos
 
 ```{r,mi_primer_plot,fig.cap="Primer Gráfico"}
-x = c(1,2,3,4,5)
-y = c(4,5,6,7,8)
-plot(x,y)
+x = seq(1,5,1)
+y = seq(4,8,1)
+plot(x,y,type = "l", col = "purple", lwd = 2 ,
+     lty = "dotdash")
+legend("bottomright",
+       legend = c("x","y"))
+
+
 ```
 ```{r,fig.cap="Segundo Gráfico"}
 plot(2^(1:6))
@@ -22,14 +27,26 @@ plot(2^(1:6))
 
 ```{r,fig.cap="Tercer Gráfico"}
 cuadrado = function(x){x^2}
-plot(cuadrado)
+plot(cuadrado, col = "green",lwd = 2 , 
+     main = "Función cuadrado", xlim = c(-3,3),
+     ylab = expression(f(x)))
+legend("bottomleft",
+       legend = c(expression(x^2)),col = "green",
+       lwd = 2)
+
 
 ```
 
 ```{r,fig.cap="Cuarto Gráfico"}
 x = c(14,16,18,19)
 raiz_cuadrada = function(x){sqrt(x)}
-plot(raiz_cuadrada(x))
+plot(raiz_cuadrada, main = "Raiz cuadrada",
+     xlab = "x", ylab = expression(f(x)),
+     type = "l", lty = "dotdash",lwd = 2,
+     col = "orange")
+legend("bottomright",
+      legend = c(expression(sqrt(x))),lwd = 2,
+      lty = "dotdash", col = "orange")
 ```
 
 ## Parámetros
@@ -41,9 +58,15 @@ triple = function(x){x ^ 3}
 plot(triple(x),xlab = "Indices",
      ylab = "Exponentes",main = "Triple",
      pch = 20 , cex = 2,col = "red")
+legend("topleft",
+       legend = c(expression(x^3)),col = "red",
+       pch = 20)
 plot(triple(x),xlab = "Indices",
      ylab = "Exponentes",main = "Triple",
      pch = 20 , cex = 2,col = "blue")
+legend("topleft",
+       legend = c(expression(x^3)),col = "blue",
+       pch = 20)
 par(mfrow = c(1,1))
 ```
 
@@ -53,7 +76,11 @@ logaritmico = function(x){log10(x)}
 plot(logaritmico(x),xlab = "indices",
      ylab = expression(f(x)),log = "y",
      main = "Gráfico logarítmico",pch = 20,
-     color = "blue",cex = 3)
+     col = "blue",cex = 3,type = "b")
+legend("bottomright",
+       legend = c(expression(log10(x))),
+       col = "blue",pch = 20)
+
 ```
 
 ```{r}
@@ -68,11 +95,11 @@ plot(x,y,main = "Gráfico 1",pch = 23,col = "blue",
 
 ```{r}
 c = function(x){x^3}
-plot(c,xlab = "x",ylab = expression(y^3),
+plot(c,xlab = "x",ylab = expression(f(x)),
      main = "Grafico cubo",
      pch = 19 , lty = "dotdash",lwd = 2,
-     col = "red")
-abline(v = 0:1 , h = 0:1, lty = "dashed",
+     col = "red", xlim = c(-9,9))
+abline(v = -2:2 , h = 0:6, lty = "dashed",
        col = "gray0")
 ```
 
