@@ -89,6 +89,10 @@ y = c(2,3,7,8,9,10)
 plot(x,y,main = "Gráfico 1",pch = 23,col = "blue",
      bg = "red",lty = "dotdash",type = "b",
      lwd = 2,xaxp = c(0,6,3),yaxp = c(0,10,5))
+legend("bottomright",
+       legend = c("Gráfico f(x)"),
+       col = "blue",lty = "dotdash")
+
 
 
 ```
@@ -98,7 +102,7 @@ c = function(x){x^3}
 plot(c,xlab = "x",ylab = expression(f(x)),
      main = "Grafico cubo",
      pch = 19 , lty = "dotdash",lwd = 2,
-     col = "red", xlim = c(-9,9))
+     col = "red")
 abline(v = -2:2 , h = 0:6, lty = "dashed",
        col = "gray0")
 ```
