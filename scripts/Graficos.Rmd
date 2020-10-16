@@ -115,9 +115,18 @@ plot(x,c(exp(-x) + (-1) ^ x * x/2 * sin(x)^ 2),
      lwd = 2, col = "red",type = "b",
      main = "Gráfico con varios elementos")
 segments(10,0,40,0, col = "red",lwd = 4)
-polygon(c(20,30,40),c(10,-10,10),col = "gold",
-        density = 3, angle = 90, lty = 4,
-        lwd = 5)
+
+
+```
+
+```{r}
+alumnos = c(1:10)
+notas = c(2,5,7,9,8,3,5,6,10,7)
+plot(alumnos,notas,
+     main = "Gráfico Notas de alumnos",
+     xlab = "Alumnos", ylab = "Notas",
+     col = "red",
+     type = "b", lty = "dotdash", lwd = 2)
 
 ```
 
