@@ -115,6 +115,9 @@ plot(x,c(exp(-x) + (-1) ^ x * x/2 * sin(x)^ 2),
      lwd = 2, col = "red",type = "b",
      main = "Gráfico con varios elementos")
 segments(10,0,40,0, col = "red",lwd = 4)
+polygon(c(20,30,40), c(10,-10,10), col = "gold",
+        density = 3, angle = 90 , lty = "dotdash",
+        lwd = 5)
 
 
 ```
