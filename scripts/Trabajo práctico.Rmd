@@ -1,0 +1,24 @@
+---
+title: "Trabajo"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+####Con una sola instrucción, dibujad el gráfico de la función y=x^2−3x+30 entre −15 y 15. De título, poned “Una parábola”. De etiquetas, en el eje 0X poned, en formato matemático, "x"; y en el eje 0Y, introducid y=x^2−3x+30, también en formato matemático. Tenéis que utilizar la función curve()
+
+
+
+```{r}
+funcion = function(x){x^2-3*x+30}
+curve(funcion,xlim = c(-15,15),
+      main = "Una parábola",
+      xlab = expression(x),
+      ylab = expression(y=x^2-3*x+30))
+
+```
+
