@@ -39,7 +39,7 @@ plot(f,xlim = c(-15,15),
 ```{r}
 y = function(x){5 * 2^x}
 curve(y,xlim = c(-10,25),
-      ylab = expression(y = 5 * 2^x))
+      ylab = expression(5 * 2^x))
 ```
 
 ####Dibuja el gráfico de la función y_1 = 3x utilizando la función curve(). Añade la curva y_2=-3x, entre -10 y 20. El gráfico no debe mostrar ninguna etiqueta. La primera curva debe ser de color azul y la segunda, de color verde. Ponedle de título "2 rectas" y de subtítulo "Dos rectas con pendiente opuesto". Añadid al gráfico un recuadro (con la esquina superior izquierda en el punto (13,10)) que indique que la función 3x es la azul y la -3x verde.
@@ -55,11 +55,15 @@ legend("topleft",
                   expression(-3*x)),
        lwd = 1,
        col = c("blue","green"))
+abline(2,7,col = "blue", lwd = 2)
+abline(0,0, col = "red" , lwd = 5)
 
 ```
 
 ####Dad la instrucción que añada a un gráfico anterior la recta horizontal y = 0 de color rojo con un grosor de 5 puntos.
-```{r}
 
-```
+
+####Dad la instrucción que añada a un gráfico anterior la recta y = 2x+7 de color azul con un grosor de 2 puntos.
+
+
 
