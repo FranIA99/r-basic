@@ -1,0 +1,18 @@
+---
+title: "R Notebook"
+output:
+  html_document:
+    df_print: paged
+---
+
+# Data frame de iris
+
+```{r}
+df = iris
+head(df, 5)
+tail(df, 5)
+names(df)
+str(df)
+str(Orange)
+```
+
