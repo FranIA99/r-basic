@@ -1674,6 +1674,33 @@ head(df, 5)</code></pre>
 ##  - attr(*, &quot;units&quot;)=List of 2
 ##   ..$ x: chr &quot;(days)&quot;
 ##   ..$ y: chr &quot;(mm)&quot;</code></pre>
+<div id="acceso-a-los-data-frame" class="section level2">
+<h2>Acceso a los Data frame</h2>
+<pre class="r"><code>df[1:10,]</code></pre>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Sepal.Length"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Sepal.Width"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Petal.Length"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["Petal.Width"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["Species"],"name":[5],"type":["fctr"],"align":["left"]}],"data":[{"1":"5.1","2":"3.5","3":"1.4","4":"0.2","5":"setosa","_rn_":"1"},{"1":"4.9","2":"3.0","3":"1.4","4":"0.2","5":"setosa","_rn_":"2"},{"1":"4.7","2":"3.2","3":"1.3","4":"0.2","5":"setosa","_rn_":"3"},{"1":"4.6","2":"3.1","3":"1.5","4":"0.2","5":"setosa","_rn_":"4"},{"1":"5.0","2":"3.6","3":"1.4","4":"0.2","5":"setosa","_rn_":"5"},{"1":"5.4","2":"3.9","3":"1.7","4":"0.4","5":"setosa","_rn_":"6"},{"1":"4.6","2":"3.4","3":"1.4","4":"0.3","5":"setosa","_rn_":"7"},{"1":"5.0","2":"3.4","3":"1.5","4":"0.2","5":"setosa","_rn_":"8"},{"1":"4.4","2":"2.9","3":"1.4","4":"0.2","5":"setosa","_rn_":"9"},{"1":"4.9","2":"3.1","3":"1.5","4":"0.1","5":"setosa","_rn_":"10"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<pre class="r"><code>df[1:10, 2:4]</code></pre>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Sepal.Width"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Petal.Length"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Petal.Width"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"3.5","2":"1.4","3":"0.2","_rn_":"1"},{"1":"3.0","2":"1.4","3":"0.2","_rn_":"2"},{"1":"3.2","2":"1.3","3":"0.2","_rn_":"3"},{"1":"3.1","2":"1.5","3":"0.2","_rn_":"4"},{"1":"3.6","2":"1.4","3":"0.2","_rn_":"5"},{"1":"3.9","2":"1.7","3":"0.4","_rn_":"6"},{"1":"3.4","2":"1.4","3":"0.3","_rn_":"7"},{"1":"3.4","2":"1.5","3":"0.2","_rn_":"8"},{"1":"2.9","2":"1.4","3":"0.2","_rn_":"9"},{"1":"3.1","2":"1.5","3":"0.1","_rn_":"10"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<pre class="r"><code>df[df$Species == &quot;setosa&quot; &amp; df$Sepal.Width &gt; 4, ]</code></pre>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Sepal.Length"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Sepal.Width"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Petal.Length"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["Petal.Width"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["Species"],"name":[5],"type":["fctr"],"align":["left"]}],"data":[{"1":"5.7","2":"4.4","3":"1.5","4":"0.4","5":"setosa","_rn_":"16"},{"1":"5.2","2":"4.1","3":"1.5","4":"0.1","5":"setosa","_rn_":"33"},{"1":"5.5","2":"4.2","3":"1.4","4":"0.2","5":"setosa","_rn_":"34"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<pre class="r"><code>df[df$Species == &quot;setosa&quot; &amp; df$Sepal.Width &gt; 4,][c(1, 3), c(2,5)]</code></pre>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Sepal.Width"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Species"],"name":[2],"type":["fctr"],"align":["left"]}],"data":[{"1":"4.4","2":"setosa","_rn_":"16"},{"1":"4.2","2":"setosa","_rn_":"34"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
 </div>
 
 
