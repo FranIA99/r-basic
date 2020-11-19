@@ -1,0 +1,10 @@
+---
+title: "Carga de Data Frame"
+author: "Francisco Alberto"
+date: "19/11/2020"
+output: html_document
+---
+
+## Carga de ficheros local
+
+
